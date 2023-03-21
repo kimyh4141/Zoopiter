@@ -1,7 +1,7 @@
 @charset "utf-8";
-@import '/prj/common.css';
+@import '/css/common.css';
 * {
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   margin: 0;
 }
 
@@ -224,13 +224,28 @@ body {
   width: 50%;
   justify-content: space-between;
   outline: 1px solid black;
+  height: 30px;
+  font-weight: bold;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
 }
 .b .search .opt .chk {
   margin-left: 10px;
 }
+.b input {
+  border-radius: 5px;
+  height: 30px;
+  display: flex;
+}
+.b input button {
+  border-radius: 5px;
+  height: 30px;
+}
 
 .b div {
   display: flex;
+  align-items: center;
 }
 .b .search .input {
   width: 30%;
@@ -246,6 +261,7 @@ body {
   grid-area: c;
   width: 100%;
   display: flex;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 .c .tag {

@@ -1,4 +1,4 @@
 @charset "utf-8";
-@import 'reset.css';
-@import 'font.css';
-@import 'color.css';
+@import '/css/reset.css';
+@import '/css/font.css';
+@import '/css/color.css';

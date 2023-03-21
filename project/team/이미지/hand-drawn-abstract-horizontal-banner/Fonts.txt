@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Gaegu
+Author: JIKJI SOFT
+Url: https://fonts.google.com/specimen/Gaegu
+
+Font: Londrina Solid
+Author: Marcelo Magalhães
+Url: https://fonts.google.com/specimen/Londrina+Solid

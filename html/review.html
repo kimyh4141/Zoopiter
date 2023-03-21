@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>동물병원 후기</title>
     <link rel="stylesheet" href="/css/review.css" />
+    <link rel="stylesheet" href="/javascript/date.js">
     <!-- 폰트 어썸 : 로고 -->
     <script
       src="https://kit.fontawesome.com/6631aa96e6.js"
@@ -97,13 +98,6 @@
             <input type="text" />
             <button>검색</button>
           </div>
-          <!-- <div>
-            <select name="" id="">
-              <option value="">조회순</option>
-              <option value="">최신순</option>
-              <option value="">좋아요</option>
-            </select>
-          </div> -->
         </div>
       </div>
       <div class="b-r"></div>
@@ -123,7 +117,7 @@
               <div class="img"><img src="" alt="" />프사</div>
               <div class="name">
                 <div>작성자명</div>
-                <div>2023.03.12</div>
+                <div id="clock" style="color:black;">clock</div>
               </div>
             </div>
             <div class="sub">
@@ -159,7 +153,7 @@
               <div class="img"><img src="" alt="" />프사</div>
               <div class="name">
                 <div>작성자명</div>
-                <div>2023.03.12</div>
+                 <div id="clock" style="color:black;">clock</div>
               </div>
             </div>
             <div class="sub">
@@ -282,6 +276,30 @@
           });
         }
       });
+
+
+   var Target = document.getElementById("clock");
+        function clock() {
+            var time = new Date();
+
+            var year = time.getFullYear();
+            var month = time.getMonth();
+            var date = time.getDate();
+            var day = time.getDay();
+            var week = ['일', '월', '화', '수', '목', '금', '토'];
+
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+
+            Target.innerText = 
+            `${year}.${month + 1}.${date}  ` 
+           ;
+                
+        }
+        clock();
+        // setInterval(clock, 1000); // 1초마다 실행
+
     </script>
   </body>
 </html>
