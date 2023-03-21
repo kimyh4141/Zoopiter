@@ -7,13 +7,17 @@
     <title>동물병원 후기</title>
     <link rel="stylesheet" href="/css/review.css" />
     <link rel="stylesheet" href="/javascript/date.js">
+    
     <!-- 폰트 어썸 : 로고 -->
     <script
-      src="https://kit.fontawesome.com/6631aa96e6.js"
-      crossorigin="anonymous"
+    
+    src="https://kit.fontawesome.com/6631aa96e6.js"
+    crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- <script type="text/javascript" src="/javascript/date.js">
+    </script> -->
     <div class="wrap">
       <div class="hd-l"></div>
       <header class="hd">
@@ -55,12 +59,14 @@
       <div class="a">
         <div class="list">
           <div class="main">병원 후기 목록</div>
-          <div>
-            <select name="" id="">
+          <div class="selectBox">
+            <select class="select">
               <option value="">조회순</option>
               <option value="">최신순</option>
               <option value="">좋아요</option>
             </select>
+             <span class="icoArrow"><img src="/img/under.png" alt=""></span>
+             <!-- <span class="icoArrow"><img src="https://freepikpsd.com/media/2019/10/down-arrow-icon-png-7-Transparent-Images.png" alt=""></span> -->
           </div>
         </div>
       </div>
@@ -68,7 +74,7 @@
 
       <div class="b-l"></div>
       <div class="b">
-        <div class="search">
+        <!-- <div class="search">
           <div class="tag">
             <div>동물태그</div>
             <div class="opt">
@@ -98,7 +104,38 @@
             <input type="text" />
             <button>검색</button>
           </div>
-        </div>
+        </div> -->
+        <div class="search">
+          <div class="left">
+            <div class="tag">동물태그</div>
+            <div class="opt1">
+                <select name="" id="">
+                <option value="">동물 대분류</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                </select>
+                <div class="chk">
+                <input type="checkbox" />
+                </div>
+            </div>
+            <div class="opt2">
+                <select name="" id="">
+                <option value="">동물 소분류</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                </select>
+                <div class="chk">
+                <input type="checkbox" />
+                </div>
+            </div>
+            </div>
+            <div class="input">
+              <input type="text" />
+              <button>검색</button>
+            </div>
+          </div>
       </div>
       <div class="b-r"></div>
 
@@ -117,7 +154,9 @@
               <div class="img"><img src="" alt="" />프사</div>
               <div class="name">
                 <div>작성자명</div>
-                <div id="clock" style="color:black;">clock</div>
+                <div id="clock" style="color:black;">
+                  <!-- <script type="text/javascript"></script> -->
+                </div>
               </div>
             </div>
             <div class="sub">
