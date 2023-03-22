@@ -373,6 +373,7 @@ body {
 .c .tag {
   background-color: #ffd65f;
   margin: 5px;
+  border-radius: 4px;
 }
 .d {
   grid-area: d;
@@ -421,6 +422,7 @@ body {
 .d .tag {
   background-color: #ffd65f;
   text-align: center;
+  border-radius: 4px;
 }
 .d .post .preview {
   display: flex;

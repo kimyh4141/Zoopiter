@@ -374,6 +374,7 @@ hr {
   font-size: 15px;
   border-radius: 5px;
   background-color: #ffd65f;
+  border-color: #f29a2e;
 }
 .f .che .btn .corr button {
   font-weight: bold;
@@ -427,9 +428,11 @@ hr {
 }
 .h .input .comment input {
   width: 100%;
+  background-color: #f7f7f7;
   padding: 0;
   margin: 0;
   border: 0;
+  font-size: 12px;
 }
 .h .input .btn {
   display: flex;
@@ -531,6 +534,8 @@ hr {
   padding: 0;
   margin: 0;
   border: 0;
+
+  background-color: #f7f7f7;
 }
 .j .input .btn {
   display: flex;

@@ -81,7 +81,7 @@
             <div class="title">
                 <h2>동물병원 검색</h2>
                 <div class="btn">
-                  <button class="closeBtn">✖</button>
+                  <button class="closeBtn1">✖</button>
                 </div>
               </div>
               <div class="mid">
@@ -91,7 +91,7 @@
                   <button>검색</button>
                 </div>
               </div>
-              <div class="res" style="overflow:scroll; height:400px";>
+              <div class="res" style="overflow:auto; width: 500px; height:400px";>
                 찾으실 동물병원을 검색해 주세요Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione facilis vitae dolorum possimus optio est dolorem aut numquam voluptates perferendis debitis, dolores doloribus reiciendis harum provident repudiandae. Asperiores, repellat eos.
                 Eligendi quam, quisquam atque eaque ullam facere asperiores suscipit labore blanditiis voluptates assumenda ipsam consectetur voluptatibus. Minus, repellat? Qui quos voluptate dolore perspiciatis dignissimos odio alias earum culpa consectetur corrupti!
                 Culpa eaque corrupti a sunt quidem ad. Ratione autem alias a repudiandae soluta, ullam eum voluptatum magni illum aut omnis facilis suscipit, natus quidem labore quam ut dolorem nobis ea!
@@ -102,7 +102,7 @@
               </div>
               <div class="bot">
                 <div class="btn">
-                  <button>닫기</button>
+                  <button class="closeBtn2">닫기</button>
                 </div>
               </div>
           </div>
@@ -191,7 +191,8 @@
   }
 
   document.querySelector(".openBtn").addEventListener("click", open);
-  document.querySelector(".closeBtn").addEventListener("click", close);
+  document.querySelector(".closeBtn1").addEventListener("click", close);
+  document.querySelector(".closeBtn2").addEventListener("click", close);
   document.querySelector(".bg").addEventListener("click", close);
 
 
