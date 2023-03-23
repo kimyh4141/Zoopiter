@@ -292,11 +292,14 @@ body {
 }
 
 .sort div {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   font-weight: bold;
   font-size: 20px;
   /* margin-left: 10px; */
+}
+.sort .search {
+  display: flex;
 }
 .sort .search .input input {
   height: 20px;

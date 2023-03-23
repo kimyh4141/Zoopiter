@@ -49,30 +49,26 @@
       </header>
       <div class="hd-r"></div>
 
-      <div class="a-l"></div>
-      <div class="a">
-        <div class="title">
+      <div class="title-l"></div>
+      <div class="title">
+        <div class="title-row">
             <div class="main">동물병원 후기 작성</div>
-        <!-- <div class="chk">
-            공개<input type="checkbox">
-        </div>
-        <div class="chk">
-            비공개<input type="checkbox">
-        </div> -->
+      
          </div>
       </div>
-    <div class="a-r"></div>
+    <div class="title-r"></div>
 
-    <div class="b-l"></div>
-    <div class="b">
+     <div class="title-name-l"></div>
+    <div class="title-name">
         <div class="input">
             <input type="text" placeholder="제목을 입력해주세요.">
         </div>
     </div>
-    <div class="b-r"></div>
-    <div class="c-l"></div>
+    <div class="title-name-r"></div>
 
-    <div class="c">
+    <div class="hos-search-l"></div>
+
+    <div class="hos-search">
       <input type="text"/>
         <button class="openBtn">검색</button>
         <div class="modal hidden">
@@ -110,61 +106,58 @@
         
     </div>
 
-    <div class="c-r"></div>
-    <div class="d-l"></div>
-    <div class="d">
+    <div class="hos-search-r"></div>
+    <div class="main-text-l"></div>
+    <div class="main-text">
          <div class="input">
             <input type="text" placeholder="본문을 입력해주세요.">
         </div>
     </div>
-    <div class="d-r"></div>
-    <div class="e-l"></div>
-    <div class="e">
-        <div class="search">
-            <div class="tag">동물태그</div>
-            <div class="opt1">
-                <select name="" id="">
-                <option value="">동물 대분류</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                </select>
-                <div class="chk">
-                <input type="checkbox" />
-                </div>
-            </div>
-            <div class="opt2">
-                <select name="" id="">
-                <option value="">동물 소분류</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                </select>
-                <div class="chk">
-                <input type="checkbox" />
-                </div>
-            </div>
+    <div class="main-text-r"></div>
+
+     <div class="sort-l"></div>
+    <div class="sort">
+      <div class="sort-row">
+          <div class="search">
+              <div class="tag">동물태그</div>
+              <div class="selectBox1">
+                  <select class="select">
+                    <option value="">동물 대분류</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                  <span class="icoArrow"><img src="/img/under.png" alt="" /></span>
+              </div>
+              <div class="selectBox2">
+                  <select class="select">
+                    <option value="">동물 소분류</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                  <span class="icoArrow"><img src="/img/under.png" alt="" /></span>
+              </div>
+          </div>
         </div>
     </div>
-    <div class="e-r"></div>
-    <div class="f-l"></div>
-    <div class="f">
+    <div class="sort-r"></div>
+
+     <div class="load-tag-l"></div>
+    <div class="load-tag">
         <div class="tag">#개</div>
         <div class="tag">#새</div>
     </div>
-    <div class="f-r"></div>
-    <div class="g-l"></div>
-    <div class="g">
+    <div class="load-tag-r"></div>
+
+     <div class="select-file-l"></div>
+    <div class="select-file">
         <input type="file" name="FileName">
     </div>
-    <div class="g-r"></div>
-    <div class="h-l"></div>
-    <div class="h">
-        <!-- <div class="box"></div> -->
-    </div>
-    <div class="h-r"></div>
-    <div class="i-l"></div>
-    <div class="i">
+    <div class="select-file-r"></div>
+
+    <div class="alarm-l"></div>
+    <div class="alarm">
         <div class="pic">
             <div class="img">
                 <div class="pic"><img src="/img/photo.png" alt="">사진첨부</div>
@@ -174,13 +167,15 @@
             </div>
         </div>
     </div>
-    <div class="i-r"></div>
-    <div class="j-l"></div>
-    <div class="j">
+    <div class="alarm-r"></div>
+
+     <div class="complete-l"></div>
+    <div class="complete">
         <div><button onclick="location.href='review.html'">글 등록</button></div>
     </div>
-    <div class="j-r"></div>
+    <div class="complete-r"></div>
 
+    
      <script>
   const open = () => {
     document.querySelector(".modal").classList.remove("hidden");
