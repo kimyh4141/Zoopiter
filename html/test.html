@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/test.css" />
+  </head>
+  <body>
+    <div id="result"></div>
+    <div class="star-rating space-x-4 mx-auto">
+      <input
+        type="radio"
+        id="5-stars"
+        name="rating"
+        value="5"
+        v-model="ratings"
+      />
+      <label for="5-stars" class="star pr-4">★</label>
+      <input
+        type="radio"
+        id="4-stars"
+        name="rating"
+        value="4"
+        v-model="ratings"
+      />
+      <label for="4-stars" class="star">★</label>
+      <input
+        type="radio"
+        id="3-stars"
+        name="rating"
+        value="3"
+        v-model="ratings"
+      />
+      <label for="3-stars" class="star">★</label>
+      <input
+        type="radio"
+        id="2-stars"
+        name="rating"
+        value="2"
+        v-model="ratings"
+      />
+      <label for="2-stars" class="star">★</label>
+      <input
+        type="radio"
+        id="1-star"
+        name="rating"
+        value="1"
+        v-model="ratings"
+      />
+      <label for="1-star" class="star">★</label>
+    </div>
+
+    <script>
+      const stars = document.getElementsByName('rating');
+
+      // 이벤트 리스너 등록
+      stars.forEach(function (star) {
+        star.addEventListener('click', function () {
+          // 선택한 별점 값을 출력
+          document.getElementById('result').innerText = star.value + '점';
+        });
+      });
+    </script>
+  </body>
+</html>
